@@ -8,7 +8,6 @@ A full-stack microservices-based e-commerce platform built with **Java**, **Spri
 [![Angular](https://img.shields.io/badge/Angular_17-DD0031?style=flat&logo=angular&logoColor=white)](https://angular.dev)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat)](LICENSE)
 
 ---
 
@@ -31,7 +30,6 @@ A full-stack microservices-based e-commerce platform built with **Java**, **Spri
 - [Testing](#-testing)
 - [Screenshots](#-screenshots)
 - [Future Enhancements](#-future-enhancements)
-- [Interview Topics](#-interview-topics)
 
 ---
 
@@ -347,7 +345,6 @@ ecommerce-system/
 │       ├── models/                 # TypeScript interfaces
 │       └── guards/                 # Route guards
 ├── docs/                           # Documentation
-│   ├── INTERVIEW_GUIDE.md
 │   ├── RESUME_PROJECT_DESCRIPTION.md
 │   └── screenshots/
 ├── docker-compose.yml
@@ -518,40 +515,5 @@ This tests: Register → Login → Browse → Cart → Checkout → Payment → 
 
 ---
 
-## 💡 Interview Topics
 
-This project demonstrates understanding of:
 
-### Architecture
-- **Why microservices?** Independent deployment, team autonomy, technology flexibility
-- **Why Kafka?** Async communication, decoupling, reliability, scalability
-- **Why REST + Kafka?** REST for sync operations (auth, queries), Kafka for async events (orders, payments)
-
-### Key Workflows
-- **Checkout flow:** Cart → Validate → Create Order → Reserve Inventory → Process Payment → Confirm
-- **Payment failure:** Payment fails → Kafka event → Release inventory → Update order status → Notify customer
-- **Order cancellation:** Validate state → Cancel → Release inventory → Refund simulation → Notify
-
-### Technical Concepts
-- JWT authentication and role-based authorization
-- Database-per-service pattern and eventual consistency
-- Optimistic locking for inventory concurrency
-- Event-driven architecture and Kafka consumer groups
-- API Gateway routing and cross-cutting concerns
-
-See [docs/INTERVIEW_GUIDE.md](docs/INTERVIEW_GUIDE.md) for detailed Q&A.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-## 👤 Author
-
-**Jhansi Mahanthi** — Java Full Stack Developer
-
-- GitHub: [jhansimahanthi](https://github.com/jhansimahanthi)
-- LinkedIn: [jhansimahanthi](https://linkedin.com/in/jhansimahanthi)
